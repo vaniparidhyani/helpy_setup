@@ -1,0 +1,9 @@
+---
+app_name: helpy
+app_user: "{{ app_name }}"
+app_group: "{{ app_name }}"
+user_id: 1004
+app_uid: 4007
+app_gid: "{{ app_uid }}"
+app_home: "/home/{{ app_name }}"
+app_repo: "helpy"

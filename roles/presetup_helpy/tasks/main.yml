@@ -1,0 +1,14 @@
+---
+  - name: Install dependencies
+    yum: name={{ item }} state=present 
+    when: ansible_system == "Linux"
+    with_items:
+      - openssl-devel
+      - libffi-dev
+      - libgdbm-dev
+      - libncurses5-dev
+      - libreadline-dev
+      - libreadline6-dev
+      - libtinfo-dev
+      - libyaml-dev
+    become: true
